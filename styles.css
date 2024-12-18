@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #E0E0E0;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+  }
+  
+  #previewPane {
+    width: 100%;
+    min-height: 200px;
+    padding: 10px;
+    background-color: #F3E5F5;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+    }
+  
+    textarea, #previewPane {
+      width: 48%;
+    }
+  }
+  
